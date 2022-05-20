@@ -1,16 +1,14 @@
-# WIP: split into sub packages
-
-%global vergit 20210322
+%define oname materia-theme
 
 Name:           materia-gtk-theme
-Version:        0.0.%{vergit}
-Release:        4%{?dist}
+Version:        20210322
+Release:        1
 Summary:        Material Design theme for GNOME/GTK based desktop environments
 BuildArch:      noarch
 
 License:        GPLv2
 URL:            https://github.com/nana-4/materia-theme
-Source0:        %{url}/archive/v%{vergit}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/nana-4/materia-theme/archive/v%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:  gnome-shell
 BuildRequires:  meson
@@ -29,7 +27,7 @@ LightDM, GDM, Chrome theme, etc.
 
 
 %prep
-%autosetup -n materia-theme-%{vergit} -p1
+%autosetup -n materia-theme-%{version} -p1
 
 
 %build
