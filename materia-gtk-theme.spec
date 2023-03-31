@@ -2,7 +2,7 @@
 
 Name:           materia-gtk-theme
 Version:        20210322
-Release:        1
+Release:        2
 Summary:        Material Design theme for GNOME/GTK based desktop environments
 BuildArch:      noarch
 
